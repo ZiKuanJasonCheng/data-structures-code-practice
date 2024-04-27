@@ -6,11 +6,7 @@ using namespace std;
 */
 
 int num_least_notes(int N) {
-    /*  
-        Input: N, amount of money
-        Return: number of least notes to be exchanged
-    */
-    int arr_denomination[] = {1, 3, 4};  // denomination 1 must exists or otherwise the following method does not work
+    int arr_denomination[] = {1, 3, 4};  // Set of denominations. Denomination 1 must exists or otherwise the following method does not work
     int M = 3;  // Number of denominations
     if (N == 0) {
         return 0;
